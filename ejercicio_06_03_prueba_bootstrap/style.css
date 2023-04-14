@@ -1,0 +1,23 @@
+.container{
+border-radius: 5px;
+border: 1px solid;
+margin: 3px;
+padding: 5px;
+-gap: 10px;
+
+background-color: rgb(227, 209, 247);
+}
+.container :hover{
+
+color: rgb(35, 35, 116);
+
+}
+
+.col{
+    gap: 5px;
+    border: 1px solid;
+    margin: 3px;
+}
+.row{
+    gap: 10px;
+}

@@ -1,0 +1,38 @@
+*{
+    background: rgb(188, 209, 248);
+    margin: 20px;
+    color: rgb(93, 25, 25);
+}
+
+.box{
+    background: rgb(219, 248, 160);
+    padding: 5px;
+    color: black ;
+    text-align: center ;
+}
+.container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 2fr);
+    
+   
+
+}
+.romper{
+   grid-row: span 2;
+   grid-column: span 2;
+   
+}
+
+/* 
+.romper2{
+    grid-row: 3/5;
+    grid-column:2/4 ;
+    
+}
+ */
+
+ .romper2{
+    grid-area: col3 row2 ;
+ }
+

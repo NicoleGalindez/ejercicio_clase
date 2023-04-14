@@ -1,0 +1,24 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(225, 236, 202);
+}
+.iconos :hover{
+    padding: 2px;
+}
+.redes :hover{
+    padding: 2px;
+}
+.tablaquienes{
+    display: grid;
+    
+
+}
+
+
+.tablaquienes :hover{
+    padding: 1px;
+    margin: 10px;
+}
+.tablafondo{
+    
+}

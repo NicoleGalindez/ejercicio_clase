@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center>
+        <h1>REGISTRO</h1>
+
+        
+        <form action="Index.html" method="get">
+
+
+
+            <label >Tipo de identifición:</label> 
+            <input type="list" list="datalist">
+            <datalist id="datalist">
+                <option value=" C.C ">Cedula de ciudadanía</option>
+                <option value=" T.I ">Tarjeta de identidad   </option>
+                <option value=" C.E "> Cedula de extranjería  </option>
+                <option value=" R.C "> Registro civil   </option> 
+            </datalist> <p></p>
+
+
+
+          
+                <label>Número de identificación*</label><input required type="number" minlength="7" maxlength="10"><p></p>
+                
+                <label>Nombre </label></td><td><input required type="text" maxlength="30" placeholder="Ingres sus nombre"><p></p>
+                
+                <label>Apellido</label></td><td><input required type="text" maxlength="30" placeholder="Ingrese su Apellido"><p></p>
+              
+                <label>Correo electronico </label></td><td><input type="email" maxlength="30" placeholder="Ingrese su correo"><p></p>
+                
+                    <label>Género</label>
+                    <input type="list" list="genero">
+                    <datalist id="genero">
+                        <option value=" Femenino ">   </option>
+                        <option value=" Masculino ">   </option>
+                        <option value=" Sin definir">   </option>
+                    </datalist>  <p></p>
+
+
+                    <label>INGRESE SU FECHA DE NACIMIENTO </label></td><td><input type="date" min="1980-01-01" max=""> <p></p>
+
+                    <br>Color tema para ingreso <input type="color"> <p></p>
+              
+                    <label>FOTO</label></td><td><input type="file" accept="image/png, image/jpg"><p></p>
+                
+                   
+                    <label>Contraseña </label></td><td><input type="password"> <p></p>
+                        <label>Repita Contraseña </label></td><td><input type="password"> <p></p>
+
+
+            <br><input type="submit" value="registrarme " >
+           
+        </form>
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+*{
+   margin: 0;
+   padding: 0;
+   border-radius: 10px;
+   
+}
+
+body {
+    background: rgb(207, 231, 243);
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contenedor{
+    text-align: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    /*
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto); */
+    grid-template-areas: "header header header"
+                        "contenido contenido sidebar"
+                        " widget1 widget2 sidebar"
+                        " footer footer footer"; 
+    
+}
+
+.contenedor .cabeza{
+    background: rgb(66, 133, 227);
+    /* grid-column: span 3; */
+    grid-area: header;
+   
+}
+
+.contenedor .contenido{
+    background: rgb(242, 242, 171);
+    /* grid-column: span 2; */
+    grid-area: contenido ;
+    
+    
+}
+
+
+
+.contenedor .sidebar{
+    
+    background: rgb(164, 212, 170);
+     /* grid-row: span 2; */
+    grid-area: sidebar;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contenedor .widget1{
+
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    background: rgb(176, 176, 213);
+    grid-area: widget1 ;
+}
+.contenedor .widget1:hover{
+    scale: 1.1;
+    padding: 2%;
+    color: rgb(255, 255, 255) ;
+}  
+
+
+.contenedor .widget2{
+
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    background: rgb(176, 176, 213);
+    grid-area:  widget2 ;
+}
+.contenedor .widget2:hover{
+    scale: 1.1;
+    padding: 2%;
+    color: rgb(255, 255, 255) ;
+}  
+
+
+
+.contenedor .pie{
+    background: rgb(66, 133, 227);
+    text-align: center;
+    /*  grid-column: span 3; */
+    grid-area: footer;
+}
+
+
+@media screen and ( max-width:700px){
+  /*  body{
+        background-color: rgb(20, 11, 64);
+    }  */
+      
+    .contenedor{
+        grid-template-areas: "header header header"
+                            "contenido conenido contenido"
+                             "sidebar sidebar sidebar"
+                              "widget1 widget2 widget2"
+                               "footer footer footer";
+    }
+  
+   /* .contenedor .contenido{
+            background: rgb(179, 200, 238);
+        }
+        .contenedor .cabeza,
+        .contenedor .pie {
+            background: rgb(249, 206, 255);
+        }
+         
+        .contenedor .widget1,
+        .contenedor .widget2 {
+            background: rgb(230, 230, 168);
+        }
+        */
+    
+    
+}
+
+@media screen and ( min-width:800px){
+    body{
+        background-color: rgb(255, 255, 255);
+
+    }   
+    .contenedor .contenido{
+        background: rgb(242, 242, 171);
+    }
+   
+}
+    
+  
+
+        

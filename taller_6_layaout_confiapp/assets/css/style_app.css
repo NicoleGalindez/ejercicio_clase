@@ -1,0 +1,273 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    
+ }
+ 
+ body {
+     background: rgb(207, 231, 243);
+     color: rgb(0, 0, 0);
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ .contenedor{
+     text-align: center;
+    /*  width: 100%;
+     max-width: 1000px;*/
+     margin: 20px ;
+     display: grid;
+     grid-gap: 20px;
+     /*
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(4, auto); */
+
+     grid-template-areas: "header header header "
+                         "contenido contenido sidebar"
+                         " widget1 widget2 sidebar"
+                         " widget3 widget4 sidebar"
+                         " footer footer footer"; 
+     
+ }
+ 
+ .contenedor .cabeza{
+     background: rgb(214, 231, 255);
+     /* grid-column: span 3; */
+     grid-area: header;
+     font-size: 35px;
+     
+    
+ }
+ .menu{
+    display: inline-block;
+    grid-template-columns: repeat(6, 1fr);
+ }
+
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    float:left;
+
+ }
+
+.menu a{
+    color: rgb(58, 58, 58);
+    display: block;
+    padding: 5px;
+    background-color:  rgb(170, 218, 243);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+ .contenedor .contenido{
+     background: rgb(242, 242, 171);
+     /* grid-column: span 2; */
+     grid-area: contenido ;
+     
+     
+ }
+ 
+ 
+ 
+ .contenedor .sidebar{
+     
+     background: rgb(164, 212, 170);
+      /* grid-row: span 2; */
+     grid-area: sidebar;
+    /* display: flex ;
+     align-items: center;
+     justify-content: center;*/
+     
+ }
+ 
+ .contenedor .widget1{
+     background: rgb(176, 176, 213);
+     grid-area: widget1 ;
+     display: grid;
+     grid-template-areas: "mision mision mision"
+                          "lorem lorem imgmision" ;
+                       
+    
+ }
+ .mision{
+    grid-area: mision;
+ }
+ .lorem{
+    grid-area: lorem;
+ }
+ .imgmision{
+    margin: 5px;
+    grid-area: imgmision;
+ }
+ .contenedor .widget1:hover{
+     scale: 1.1;
+     padding: 1%;
+     
+ }  
+ 
+ 
+ .contenedor .widget2{
+     background: rgb(176, 176, 213);
+     grid-area:  widget2 ;
+     display: grid;
+     grid-template-areas: "vision vision vision"
+                          "loremvision loremvision imgvision";
+                        
+ }
+ .vision{
+    margin: 5px;
+    grid-area: vision;
+ }
+ .loremvision{
+    grid-area: loremvision;
+ }
+ .imgvision{
+    margin: 5px;
+    grid-area: imgvision;
+ }
+ .contenedor .widget1:hover{
+     scale: 1.1;
+     padding: 1%;
+     
+ }  
+ .contenedor .widget2:hover{
+     scale: 1.1;
+     padding: 1%;
+   
+ }  
+ 
+ .contenedor .widget3{
+ 
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    background: rgb(176, 176, 213);
+    grid-area: widget3 ;
+    
+}
+.contenedor .widget3 .video {
+    display: flex;
+    box-shadow: 30px;
+    margin: 10px;
+
+}  
+
+
+.contenedor .widget4{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    background: rgb(176, 176, 213);
+    grid-area:  widget4 ;
+}
+
+
+
+.contenedor .widget4:hover{
+    scale: 1.1;
+    padding: 1%;
+    color: rgb(255, 255, 255) ;
+}  
+ 
+.contenedor .piedepagina{
+    grid-column: 1fr 1fr;
+   
+ }
+ 
+
+ 
+ .contenedor .pie{
+     background: rgb(119, 167, 235);
+     text-align: center;
+     /*  grid-column: span 3; */
+     grid-area: footer;
+     
+     
+
+
+ }
+
+ 
+ 
+
+
+
+ .menupie{
+    display: inline-block;
+    grid-template-columns: repeat(6, 1fr);
+    
+ }
+
+.menupie ul{
+    list-style: none;
+}
+.menupie ul li{
+    float:left;
+
+ }
+
+.menupie a{
+    color: rgb(58, 58, 58);
+    display: block;
+    padding: 5px;
+    font-size: 25px;
+    margin: 5px;
+    text-decoration: none;
+    
+}
+
+
+ @media screen and ( max-width:700px){
+     body{
+         background-color: rgb(20, 11, 64);
+     }  
+       
+    
+   
+    
+     .contenedor .contenido{
+             background: rgb(159, 203, 242);
+         }
+         .contenedor .cabeza,
+         .contenedor .pie {
+             background: rgb(124, 167, 243);
+         }
+          
+         .contenedor .widget1,
+         .contenedor .widget2,
+         .contenedor .widget3,
+         .contenedor .widget4 {
+             background: rgb(119, 135, 194);
+         }
+    .contenedor .sidebar{
+        background: rgb(129, 129, 191);
+    }
+     
+    .contenedor{
+        grid-template-areas: "header header header"
+                            "contenido conenido contenido"
+                             "sidebar sidebar sidebar"
+                              "widget1 widget1 widget1"
+                              "widget2 widget2 widget2"
+                              "widget3 widget3 widget3"
+                              "widget4 widget4 widget4"
+                               "footer footer footer";
+    }
+    
+ }
+ 
+ @media screen and ( min-width:800px){
+     body{
+         background-color: rgb(255, 255, 255);
+ 
+     }   
+     .contenedor .contenido{
+         background: rgb(242, 242, 171);
+     }
+    
+     
+
+ }

@@ -1,0 +1,124 @@
+
+.barrademenu{
+
+background: #004042; 
+background: -moz-linear-gradient(top, #004042 51%, #072d2d 95%); 
+background: -webkit-linear-gradient(top, #004042 51%,#072d2d 95%); 
+background: linear-gradient(to bottom, #004042 51%,#072d2d 95%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004042', endColorstr='#072d2d',GradientType=0 );
+    
+
+
+   
+    background: #053d3f; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 60px;
+    
+}
+
+
+.barrademenu ul{
+    margin: 0 ;
+    list-style: none;
+    padding:0 ;
+    display: flex;
+    border-radius: 20%;
+   
+    
+}
+
+.barrademenu a:hover{
+    color: rgb(255, 234, 141);
+}
+
+.barrademenu a{
+    color: #f2f3f3;
+    text-decoration: none;
+    display: block;
+    padding: 20px 200px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+
+}
+
+
+
+
+.info{
+    display: grid;
+    min-width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info1{
+    
+    align-items: left;
+    display: grid;
+    grid-column: 1/4;
+    background:rgb(255, 234, 141);
+    padding:rgb(34, 34, 32);
+    border-radius: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+.infoimagen1{
+    position:absolute;
+    left: 50%;
+    padding-top: 50px;
+}
+
+.info2{    
+  display: grid;
+  grid-column: 1/4;
+  background:rgb(255, 234, 141);
+  border-radius: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;     
+                  
+    
+
+}
+.infoimagen2{
+    position:absolute;
+    left: 50%;
+    padding-top: 50px;
+   
+}
+
+
+form{
+    grid-column: 4/4;
+    grid-row: 1/4;
+    width: 550px;
+    height: 500px;
+    margin: auto;
+    background-color: #053d3f;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+
+.piedepagina{
+    background: #053d3f; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+
